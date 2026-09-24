@@ -1,0 +1,25 @@
+# Activity Python 1: Task 3
+# File: ACT_Python_HeaderTemplate_TeamXXX_UCusername.py 
+# Date:    9/24/26
+# By:      Ben Bergan
+# Section: Your Section
+# Team:    Your Team Number
+# 
+# ELECTRONIC SIGNATURE
+# Ben Bergan
+#
+# The electronic signature above indicates the script
+# submitted for evaluation is my individual work, and I
+# have a general understanding of all aspects of its
+# development and execution.
+#
+# A BRIEF DESCRIPTION OF WHAT THE SCRIPT OR FUNCTION DOES
+# computes reynolds #
+import math
+V = float(input('fluid viscosity (m/s) =')
+L = float(input('length (m) =')
+u = float(input('dynamic velocity of fluid (kg/m*s) =')
+p = float(input('density of fluid (kg/m^3) = ')
+          
+Re = (p*V*L)/u
+print('The reynolds number is ' + Re)
