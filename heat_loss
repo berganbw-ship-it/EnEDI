@@ -1,0 +1,42 @@
+import math
+# Activity Python 1: Task 3
+# File: ACT_Python_HeaderTemplate_TeamXXX_UCusername.py 
+# Date:    9/24/26
+# By:      Ben Bergan
+# Section: Your Section
+# Team:    Your Team Number
+# 
+# ELECTRONIC SIGNATURE
+# Ben Bergan
+#
+# The electronic signature above indicates the script
+# submitted for evaluation is my individual work, and I
+# have a general understanding of all aspects of its
+# development and execution.
+#
+# A BRIEF DESCRIPTION OF WHAT THE SCRIPT OR FUNCTION DOES
+# computes heat loss of a house
+
+#inputs
+Thouse = float(input("house temp (C) = "))
+Toutside = float(input("outside temp (C) = "))
+A = float(input("house surface area (ft^2) = "))
+L = float(input("house height (ft) = "))
+#constants
+k = 0.25
+g = 9.80665
+beta = 1/Toutside
+Pr = 0.7
+v = 1.271e-5
+#conversions
+Thouse = Thouse + 273.15
+Toutside = Toutside + 273.15
+A = A/10.764
+L = L * 0.3048
+#calculate answer
+Ra = (g*beta*(Thouse-Toutside)*(L**3)*Pr)/(v**2)
+Nu = 0.59*(Ra**0.25)
+h = (Nu*k)/L
+Q = h*A*(Thouse-Toutside)
+#print answer
+print("Heat transfer rate (W) = {0:.5f}".format(Q))

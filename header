@@ -16,10 +16,12 @@
 # A BRIEF DESCRIPTION OF WHAT THE SCRIPT OR FUNCTION DOES
 # computes reynolds #
 import math
+#inputs
 V = float(input('fluid viscosity (m/s) =')
 L = float(input('length (m) =')
 u = float(input('dynamic velocity of fluid (kg/m*s) =')
 p = float(input('density of fluid (kg/m^3) = ')
-          
+#calculate answer      
 Re = (p*V*L)/u
+#print answer
 print('The reynolds number is ' + Re)
