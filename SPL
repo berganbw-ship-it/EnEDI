@@ -1,5 +1,4 @@
 #SPL
-import math
 # Activity Python 1: Task 3
 # File: ACT_Python_HeaderTemplate_TeamXXX_UCusername.py 
 # Date:    9/24/26
@@ -17,7 +16,8 @@ import math
 #
 # A BRIEF DESCRIPTION OF WHAT THE SCRIPT OR FUNCTION DOES
 # computes max allowable sound pressure
-
+#imports
+import math
 #inputs
 SPL = float(input("SPL="))
 Pref = float(input("reference pressure ="))
