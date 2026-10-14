@@ -16,9 +16,10 @@
 # A BRIEF DESCRIPTION OF WHAT THE SCRIPT OR FUNCTION DOES
 # plays rock paper scissors
 import random
-computer_choice = random.randint(1,3) #computer random choice
 #player input
-player_choice = int(input("please input 1 for rock, 2 for paper, and 3 for scissors"))
+player_choice = int(input("please input 1 for rock, 2 for paper, and 3 for scissors: "))
+computer_choice = random.randint(1,3) #computer random choice
+print("the computer picks {0}"  .format(computer_choice))
 #computes and prints
 if (computer_choice + player_choice) % 2 == 0 and player_choice + computer_choice != 4:
     print("tie game")
@@ -36,6 +37,6 @@ if computer_choice + player_choice == 5:
         print("computer wins")
 if computer_choice + player_choice == 3:
     if computer_choice == 1:
-        print("computer wins")
-    else:
         print("player wins")
+    else:
+        print("computer wins")

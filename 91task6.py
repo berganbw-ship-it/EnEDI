@@ -17,23 +17,19 @@
 # computes if an alloy of tin and lead is all, partially, or not at all molten
 import math
 
-temp = float(input("please input temp (C)"))
-tin = float(input("please input percent tin as a whole #"))
+temp = float(input("please input temp (C): "))
+tin = float(input("please input percent tin as a whole #: "))
 
 if temp <= 183:
     print("both solid")
 else:
     if tin > 62:
-        def g(x): 
-            (49/38 * (x-62)) + 183
-        if temp <= g(tin):
+        if temp <= (49/38 * (tin-62)) + 183:
             print("solid tin, molten lead")
         else: 
             print("both molten")
     else:
-        def f(x):
-            (-144/62 * (x)) + 327
-        if temp <= f(tin):
-            print("molten tin, solid lead")
+        if temp <= (-144/62 * (tin)) + 327:
+            print("molten lead, solid tin")
         else:
             print("both molten")

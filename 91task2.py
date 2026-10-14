@@ -23,6 +23,6 @@ if pH < 7 and pH > 0:
 elif pH > 7 and pH < 14:
     print("pH is basic")
 elif pH == 7:
-    print("pH is negative")
+    print("pH is neutral")
 else:
     print("invalid input")
