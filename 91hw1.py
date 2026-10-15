@@ -21,7 +21,7 @@ resistors = [] #creates list of spring constants
 n = int(input("please input # of resistors: ")) #asks how many springs are in the system
 
 for i in range(n): #asks spring constants for each spring
-    newResistor = float(input(f"please input spring constant for spring {i+1}: "))
+    newResistor = float(input(f"please input resistance in ohms for resistor {i+1}: "))
     resistors.append(newResistor) #adds each resistance to the end of the list
 #other inputs
 type = int(input("please input 1 for series and 2 for parallel: "))
